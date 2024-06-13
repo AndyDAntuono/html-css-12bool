@@ -9,10 +9,37 @@
 .container {
 	max-width: 1170px;
 	margin: auto 0;
+	color: white;
 }
 
 .row {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
+}
+
+.col-1 {
+	flex-basis: calc(100% / 12 * 1);
+}
+
+.col-2 {
+	flex-basis: calc(100% / 12 * 2);
+}
+
+.col-5 {
+	flex-basis: calc(100% / 12 * 5);
+}
+
+
+/*COMMON COLUMNS PROPERTIES*/
+
+.ccp {
+	height: 30px;
+	margin: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg-b {
+	background-color: dodgerblue;
 }
